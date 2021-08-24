@@ -43,7 +43,7 @@ KNeighborsClassifier(n_neighbors=49) # 참고데이터를49개로한kn49 모델
 위 코드는 너무 많은 주변 데이터를 참고하기 때문에 정확도가 떨어짐  
 
 ## KNeighborsClassifier 클래스의 fit(), score(), predict() 메서드
-fit() : 모델을 학습하는 코드  
+fit() : 모델을 학습하는 코드로 특성과 정답 데이터를 전달한다.  
 score() : 모델의 성능을 확인하는 코드  
 predict() : 테스트 데이터가 있으면 그 데이터의 타겟 데이터를 알 수 있다.  
 
