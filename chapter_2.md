@@ -44,3 +44,10 @@ kn.score(test_input, test_target)
 파이썬의 대표적인 '배열(array)' 라이브러리
 <img width="964" alt="스크린샷 2021-09-08 오후 2 30 15" src="https://user-images.githubusercontent.com/86886489/132451776-85e10637-00fe-4e95-9bd0-a3d1a20c6d40.png">
 
+# 파이썬 리스트를 넘파이 배열로 바꾸기(np.array 함수 이용)
+```Python
+import numpy as np
+
+input_arr = np.array(fish_data)
+target_arr = np.array(fish_target)
+```
