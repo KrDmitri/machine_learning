@@ -25,3 +25,22 @@ fish_target = [1] * 35 + [0] * 14
 
 fish_data[0:5] ##슬라이싱 코드(':'활용)
 ```
+
+## 데이터 나눠서 모델 성능 확인하기
+```Python
+train_input = fish_data[:35]
+train_target = fish_target[:35]
+test_input = fish_data[35:]
+test_target = fish_target[35:]
+
+kn = kn.fit(train_input, train_target)
+kn.score(test_input, test_target)
+```
+
+## 샘플링 편향
+훈련 세트와 테스트 세트에 샘플들이 골고루 섞여 있지 않은 경우
+
+## 넘파이
+파이썬의 대표적인 '배열(array)' 라이브러리
+<img width="964" alt="스크린샷 2021-09-08 오후 2 30 15" src="https://user-images.githubusercontent.com/86886489/132451776-85e10637-00fe-4e95-9bd0-a3d1a20c6d40.png">
+
